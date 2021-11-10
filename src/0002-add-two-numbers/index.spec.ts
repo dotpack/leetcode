@@ -1,7 +1,7 @@
 import { ListNode } from "../0000-core";
 import { addTwoNumbers } from "./index";
 
-describe("02-add-two-numbers", () => {
+describe("0002-add-two-numbers", () => {
   test("should correct ", () => {
     const a = ListNode.fromArray([3, 4, 2].reverse());
     const b = ListNode.fromArray([4, 6, 5].reverse());
