@@ -10,7 +10,7 @@ describe("0021-merge-two-sorted-lists", () => {
     ],
     [[], [], undefined],
     [[], [0], [0]],
-  ])("%o + %o = %o", (l1, l2, expectation) => {
+  ])("%s + %s = %s", (l1, l2, expectation) => {
     expect(
       mergeTwoLists(ListNode.fromArray(l1), ListNode.fromArray(l2))?.toArray()
     ).toEqual(expectation);
