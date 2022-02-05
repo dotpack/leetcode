@@ -1,7 +1,7 @@
 import { lengthOfLongestSubstring } from "./index";
 
-describe("0003-longest-substring-without-repiting-characters", () => {
-  test.only.each([
+describe("0003-longest-substring-without-repeating-characters", () => {
+  it.only.each([
     ["abcabcbb", 3],
     ["bbbbb", 1],
     ["pwwkew", 3],
