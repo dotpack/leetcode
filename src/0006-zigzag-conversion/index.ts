@@ -1,5 +1,5 @@
 export function convert(s: string, numRows: number): string {
-  let result = '';
+  let result = "";
 
   const headNumRows = numRows;
   const tailNumRows = Math.max(numRows - 2, 0);
@@ -7,7 +7,7 @@ export function convert(s: string, numRows: number): string {
 
   for (let i = 0; i < numRows; i++) {
     let headPosition = i;
-    let tailPosition = i > 0 && i < numRows - 1 ? fullNumRows - i: 0;
+    let tailPosition = i > 0 && i < numRows - 1 ? fullNumRows - i : 0;
     while (headPosition < s.length) {
       result += s[headPosition];
       if (tailPosition && tailPosition < s.length) {
