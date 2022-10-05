@@ -1,11 +1,6 @@
 import { TreeNode } from "./tree-node";
 
 describe("TreeNode", () => {
-  /**
-   * @see https://assets.leetcode.com/uploads/2021/01/18/pathsum1.jpg
-   */
-  const arr = [5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1];
-
   describe("#new", () => {
     it("returns correct TreeNode", () => {
       const l = new TreeNode("l");
@@ -19,7 +14,21 @@ describe("TreeNode", () => {
 
   describe("#fromArray", () => {
     it("returns correct TreeNode", () => {
-      const x = TreeNode.fromArray(arr);
+      const x = TreeNode.fromArray([
+        5,
+        4,
+        8,
+        11,
+        null,
+        13,
+        4,
+        7,
+        2,
+        null,
+        null,
+        null,
+        1,
+      ]);
       expect(x?.val).toBe(5);
 
       expect(x?.left?.val).toBe(4);
@@ -59,7 +68,10 @@ describe("TreeNode", () => {
   });
 
   describe(".toArray", () => {
-    it("returns correct array", () => {
+    it.each([
+      [[5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1]],
+      [[4, 2, 6, 3, 1, 5]],
+    ])("returns correct array for %o", (arr) => {
       const x = TreeNode.fromArray(arr);
       expect(x ? x.toArray() : null).toEqual(arr);
     });

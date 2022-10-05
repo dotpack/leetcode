@@ -37,11 +37,13 @@ export class TreeNode<T = number> {
         queue.push(node);
       }
 
-      const right = arr[i + 1];
-      if (right !== null) {
-        const node = new TreeNode(right);
-        parent.right = node;
-        queue.push(node);
+      if (i + 1 < arr.length) {
+        const right = arr[i + 1];
+        if (right !== null) {
+          const node = new TreeNode(right);
+          parent.right = node;
+          queue.push(node);
+        }
       }
     }
 
