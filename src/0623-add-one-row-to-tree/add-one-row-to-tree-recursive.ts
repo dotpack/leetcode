@@ -1,6 +1,6 @@
 import { TreeNode } from "../0000-core/tree-node";
 
-export function addOneRow(
+export function addOneRowToTreeRecursive(
   root: TreeNode | null,
   val: number,
   depth: number,
@@ -20,7 +20,7 @@ export function addOneRow(
     return null;
   }
 
-  root.left = addOneRow(root.left, val, depth - 1, false);
-  root.right = addOneRow(root.right, val, depth - 1, true);
+  root.left = addOneRowToTreeRecursive(root.left, val, depth - 1, false);
+  root.right = addOneRowToTreeRecursive(root.right, val, depth - 1, true);
   return root;
 }
