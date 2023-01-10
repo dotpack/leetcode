@@ -15,7 +15,7 @@ describe("0144-binary-tree-preorder-traversal", () => {
     ],
   ];
 
-  it.each(cases)("%o and %d and %d -> %o (recursive)", (root, result) => {
+  it.each(cases)("%o -> %o", (root, result) => {
     const treeNode = TreeNode.fromArray(root);
     expect(preorderTraversal(treeNode)).toEqual(result);
   });
