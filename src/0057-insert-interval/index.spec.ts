@@ -30,7 +30,6 @@ describe("0057-insert-interval", () => {
     ],
   ])("%o + %o = %o", (intervals, newInterval, result) => {
     const ans = insert(intervals, newInterval);
-    console.log(ans);
     expect(ans).toEqual(result);
   });
 });
