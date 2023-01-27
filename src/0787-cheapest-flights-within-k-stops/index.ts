@@ -10,7 +10,6 @@ export function findCheapestPrice(
 
   for (let i = 0; i <= k; i++) {
     const temp = dist.slice();
-    console.log(temp);
     for (const [f, t, cost] of flights) {
       if (Number.isFinite(dist[f])) {
         temp[t] = Math.min(temp[t], dist[f] + cost);
