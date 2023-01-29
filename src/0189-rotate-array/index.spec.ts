@@ -7,7 +7,6 @@ describe("0189-rotate-array", () => {
     [[1, 2, 3, 4, 5, 6], 3, [4, 5, 6, 1, 2, 3]],
   ])("%o and %d => %o", (arr, num, result) => {
     rotate(arr, num);
-    console.log(arr, result);
     expect(arr).toEqual(result);
   });
 });

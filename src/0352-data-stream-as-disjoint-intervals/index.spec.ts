@@ -53,7 +53,6 @@ describe("0352-data-stream-as-disjoint-intervals", () => {
       const res = summaryRanges[action](input[0]) || null;
       acc.push(res);
     }
-    console.log(acc, result);
     expect(acc).toEqual(result);
   });
 });
