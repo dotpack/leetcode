@@ -5,6 +5,8 @@ describe("0567-permutation-in-string", () => {
     ["ab", "eidbaooo", true],
     ["adb", "eidbaooo", true],
     ["ab", "eidboaoo", false],
+    ["adc", "dcda", true],
+    ["abc", "ccccbbbbaaaa", false],
   ])("%s and %s => %o", (s1, s2, res) => {
     expect(checkInclusion(s1, s2)).toEqual(res);
   });
