@@ -1,6 +1,6 @@
 import { isValidSudoku } from ".";
 
-describe("", () => {
+describe("0036-valid-sudoku", () => {
   it.each([
     [
       true,

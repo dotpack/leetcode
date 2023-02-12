@@ -1,6 +1,6 @@
 import { shortestAlternatingPaths } from ".";
 
-describe("", () => {
+describe("1129-shortest-path-with-alternating-colors", () => {
   it.each([
     [
       3,
