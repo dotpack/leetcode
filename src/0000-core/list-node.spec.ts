@@ -20,4 +20,14 @@ describe("ListNode", () => {
     const x = ListNode.fromArray(arr);
     expect(x ? x.toArray() : null).toEqual(arr);
   });
+
+  it(".getByPos", () => {
+    const arr = [1, 2, 3];
+    const x = ListNode.fromArray(arr);
+    expect(x ? x.getByPos(-1)?.val : null).toEqual(undefined);
+    expect(x ? x.getByPos(0)?.val : null).toEqual(1);
+    expect(x ? x.getByPos(1)?.val : null).toEqual(2);
+    expect(x ? x.getByPos(2)?.val : null).toEqual(3);
+    expect(x ? x.getByPos(3)?.val : null).toEqual(undefined);
+  });
 });

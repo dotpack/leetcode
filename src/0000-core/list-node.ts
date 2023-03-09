@@ -27,4 +27,16 @@ export class ListNode {
 
     return arr;
   }
+
+  getByPos(pos: number): ListNode | null {
+    if (pos < 0) {
+      return null;
+    }
+    let curr: ListNode | null = this;
+    while (curr && pos > 0) {
+      pos -= 1;
+      curr = curr.next;
+    }
+    return curr;
+  }
 }
