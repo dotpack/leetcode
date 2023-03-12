@@ -1,4 +1,4 @@
-import { ListNode } from "../0000-core";
+import { ListNode } from "../0000-core/list-node";
 import { addTwoNumbers } from "./index";
 
 describe("0002-add-two-numbers", () => {

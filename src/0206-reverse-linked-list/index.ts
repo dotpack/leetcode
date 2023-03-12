@@ -10,7 +10,7 @@
  * }
  */
 
-import { ListNode } from "../0000-core";
+import { ListNode } from "../0000-core/list-node";
 
 export function reverseList(list: ListNode | null): ListNode | null {
   let prev = null;

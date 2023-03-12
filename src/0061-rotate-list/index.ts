@@ -9,7 +9,7 @@
  *     }
  * }
  */
-import { ListNode } from "../0000-core";
+import { ListNode } from "../0000-core/list-node";
 
 export function rotateRight(head: ListNode | null, k: number): ListNode | null {
   if (!head || !head.next) {

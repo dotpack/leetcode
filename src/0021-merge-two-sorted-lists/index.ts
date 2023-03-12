@@ -9,7 +9,7 @@
  *     }
  * }
  */
-import { ListNode } from "../0000-core";
+import { ListNode } from "../0000-core/list-node";
 
 export function mergeTwoLists(
   l1: ListNode | null,

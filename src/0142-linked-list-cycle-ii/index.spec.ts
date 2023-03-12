@@ -1,5 +1,5 @@
 import { detectCycle } from ".";
-import { ListNode } from "../0000-core";
+import { ListNode } from "../0000-core/list-node";
 
 describe("0142-linked-list-cycle-ii", () => {
   it.each([

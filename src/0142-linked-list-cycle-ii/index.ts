@@ -1,4 +1,4 @@
-import { ListNode } from "../0000-core";
+import { ListNode } from "../0000-core/list-node";
 
 export function detectCycle(head: ListNode | null): ListNode | null {
   if (!head || !head.next) {

@@ -1,4 +1,4 @@
-import { ListNode } from "../0000-core";
+import { ListNode } from "../0000-core/list-node";
 import { partition } from "./index";
 
 describe("0086-partition-list", () => {

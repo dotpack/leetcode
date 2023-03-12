@@ -1,5 +1,5 @@
 import { sortedListToBST } from ".";
-import { ListNode } from "../0000-core";
+import { ListNode } from "../0000-core/list-node";
 
 describe("0109-convert-sorted-list-to-binary-search-tree", () => {
   it.each([

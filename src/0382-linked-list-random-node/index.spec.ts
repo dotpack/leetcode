@@ -1,5 +1,5 @@
 import { Solution } from ".";
-import { ListNode } from "../0000-core";
+import { ListNode } from "../0000-core/list-node";
 
 describe("0382-linked-list-random-node", () => {
   it.each([[5000, [10, 100, 100, 20, 20, 100]]])(

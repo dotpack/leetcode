@@ -1,4 +1,4 @@
-import { ListNode } from "../0000-core";
+import { ListNode } from "../0000-core/list-node";
 import { mergeTwoLists } from "./index";
 
 describe("0021-merge-two-sorted-lists", () => {

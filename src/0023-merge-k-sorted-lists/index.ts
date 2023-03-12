@@ -1,4 +1,4 @@
-import { ListNode } from "../0000-core";
+import { ListNode } from "../0000-core/list-node";
 
 export function mergeKLists(lists: Array<ListNode | null>): ListNode | null {
   function mergeLists(

@@ -1,4 +1,4 @@
-import { ListNode } from "../0000-core";
+import { ListNode } from "../0000-core/list-node";
 
 export class Solution {
   constructor(private readonly head: ListNode | null) {}

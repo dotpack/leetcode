@@ -9,7 +9,7 @@
  *     }
  * }
  */
-import { ListNode } from "../0000-core";
+import { ListNode } from "../0000-core/list-node";
 
 export function partition(head: ListNode | null, x: number): ListNode | null {
   const root = new ListNode(0, head);

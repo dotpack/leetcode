@@ -1,4 +1,4 @@
-import { ListNode } from "../0000-core";
+import { ListNode } from "../0000-core/list-node";
 import { rotateRight } from "./index";
 
 describe("0061-rotate-right", () => {
